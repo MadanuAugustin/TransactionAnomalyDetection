@@ -1,4 +1,19 @@
 
 
+COLUMNS:
+  Transaction_ID                 : object
+  Transaction_Amount             : float64
+  Transaction_Volume             :  int64
+  Average_Transaction_Amount     : float64
+  Frequency_of_Transactions      :  int64
+  Time_since_last_transaction    :  int64
+  Day_of_week                    : object
+  Time_of_Day                    : object
+  Age                            :  int64
+  Gender                         : object
+  Income                         :  int64
+  Account_Type                   : object
 
-key : val
+
+TARGET_COLUMN:
+  name : Is_anomaly
