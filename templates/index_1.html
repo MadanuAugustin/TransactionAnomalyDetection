@@ -10,10 +10,8 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #e0f7fa;
-            /* Light cyan background */
-            color: #37474f;
-            /* Dark slate gray text color */
+            background-color: #0d1117;
+            color: #f0f0f0;
             margin: 0;
             padding: 0;
         }
@@ -22,16 +20,14 @@
             max-width: 400px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #ffffff;
-            /* White background */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #21262d; /* Slightly lighter dark color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             border-radius: 5px;
         }
 
         h1 {
             text-align: center;
-            color: #006064;
-            /* Teal color */
+            color: #f0f0f0; /* Light blue color */
             font-size: 28px;
             font-weight: 700;
         }
@@ -47,8 +43,7 @@
         label {
             display: block;
             margin-bottom: 5px;
-            color: #006064;
-            /* Teal color */
+            color: #f0f0f0; /* Light blue color */
             font-weight: bold;
             font-size: 16px;
         }
@@ -57,27 +52,21 @@
             width: 100%;
             padding: 10px;
             box-sizing: border-box;
-            border: 1px solid #b0bec5;
-            /* Light gray border */
+            border: 1px solid #30363d;
             border-radius: 4px;
-            background-color: #ffffff;
-            /* White background */
-            color: #37474f;
-            /* Dark slate gray text color */
+            background-color: #273549; /* Soft cool blue background */
+            color: #c9d1d9;
             font-size: 14px;
         }
 
         .form-control::placeholder {
-            color: #90a4ae;
-            /* Gray placeholder color */
+            color: #8b949e;
         }
 
         .form-control:focus {
-            border-color: #004d40;
-            /* Darker teal border */
+            border-color: #58a6ff;
             outline: none;
-            background-color: #b2ebf2;
-            /* Light teal background on focus */
+            background-color: #1a2b3c; /* Darker blue background on focus */
         }
 
         select.form-control,
@@ -86,10 +75,8 @@
         }
 
         .btn-primary {
-            background-color: #004d40;
-            /* Darker teal background */
-            color: #ffffff;
-            /* White text color */
+            background-color: #58a6ff;
+            color: #fff;
             border: none;
             padding: 10px 15px;
             font-size: 16px;
@@ -100,15 +87,13 @@
         }
 
         .btn-primary:hover {
-            background-color: #00796b;
-            /* Teal background on hover */
+            background-color: #1e6fb8;
         }
 
         h2 {
             text-align: center;
             margin-top: 20px;
-            color: #006064;
-            /* Teal color */
+            color: #f0f0f0; /* White color */
             font-size: 22px;
             font-weight: 700;
         }
@@ -122,20 +107,17 @@
         <form action="{{ url_for('predict_datapoint')}}" method="post">
             <div class="mb-3">
                 <label class="form-label">Transaction Amount</label>
-                <input class="form-control" type="number" name="Transaction_Amount"
-                    placeholder="Enter Transaction amount" step="0.01" />
+                <input class="form-control" type="number" name="Transaction_Amount" placeholder="Enter Transaction amount" step="0.01" />
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Average Transaction Amount</label>
-                <input class="form-control" type="number" name="Average_Transaction_Amount"
-                    placeholder="Enter Average Transaction Amount" step="0.01" />
+                <input class="form-control" type="number" name="Average_Transaction_Amount" placeholder="Enter Average Transaction Amount" step="0.01" />
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Frequency of Transactions</label>
-                <input class="form-control" type="number" name="Frequency_of_Transactions"
-                    placeholder="Enter frequency of transactions" />
+                <input class="form-control" type="number" name="Frequency_of_Transactions" placeholder="Enter frequency of transactions" />
             </div>
 
             <div class="mb-3">
