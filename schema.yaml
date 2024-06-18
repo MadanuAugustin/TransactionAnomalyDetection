@@ -16,4 +16,4 @@ COLUMNS:
 
 
 TARGET_COLUMN:
-  name : Is_anomaly
+  name : Is_Anomaly
