@@ -1,4 +1,11 @@
 
 
 
-key : val
+
+
+IsolationForest:
+  n_estimators : 70
+  contamination : 0.02
+  max_samples : 15
+  max_features : 3
+  n_jobs : -1

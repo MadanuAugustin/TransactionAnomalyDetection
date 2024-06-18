@@ -132,6 +132,10 @@ class DataTransformation:
 
             transformed_test_df.rename(columns={3 : 'Is_Anomaly'}, inplace=True)
 
+            transformed_train_df['Is_Anomaly'] = transformed_train_df['Is_Anomaly'].astype('int64')
+
+            transformed_test_df['Is_Anomaly'] = transformed_test_df['Is_Anomaly'].astype('int64')
+
             transformed_train_df.to_csv(os.path.join(self.config.root_dir, 'transformed_train_df.csv'), index = False, header = True)
 
             transformed_test_df.to_csv(os.path.join(self.config.root_dir, 'transformed_test_df.csv'), index = False, header = True)
